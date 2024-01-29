@@ -1,0 +1,30 @@
+.page-techno{
+    padding: 140px 0;
+    h1{
+        text-align: center;
+    }
+    #sectionTec{
+        margin: 30px;
+        .flexImage{
+            display: flex;
+            flex-wrap: wrap;
+            .flexImage-title{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            img{
+                object-fit: cover;
+                border-radius: 10px;
+                height: 100px;
+                margin: 10px;
+            }
+            .newphoto{
+                object-fit: cover;
+                border-radius: 10px;
+                height: 100px;
+                margin: 10px;
+            }
+        }
+    }
+}

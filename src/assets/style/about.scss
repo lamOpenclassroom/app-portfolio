@@ -1,0 +1,38 @@
+#main-page{
+    .parcours{
+        flex-direction: row-reverse;
+    }
+    padding: 160px 30px 100px;
+    .propos{
+        margin-bottom: 30px;
+    }
+    .propos,.parcours{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width:1290px){
+            flex-direction: column;
+        }
+        p{
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.3rem;
+        }
+        
+        img{
+            border-radius: 20px;
+            @media(max-width:700px){
+                width: 100%;
+            }
+        }
+        .presentation{
+            width: 600px;
+            @media(max-width:700px){
+                width: 100%;
+            }
+        }
+        
+    }
+    
+}
+
+

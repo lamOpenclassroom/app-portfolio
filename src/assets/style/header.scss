@@ -1,0 +1,123 @@
+$whiteColor: #FFF;
+$blackColor:#000;
+$blackGrey:#3a3a3a;
+
+@keyframes slide {
+  from{
+    margin-left: -30%;
+  }
+  to{
+    margin-left: 20px;
+  }
+}
+
+@keyframes menuMobil {
+  from{
+    right: -200px;
+  }
+  to{
+    right: 0;
+  }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3a3a3a;
+    font-family: Montserrat, sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+  
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 0 10px 20px;
+      animation-duration: 3s;
+      animation-name:  slide;
+      @media (max-width:730px){
+        align-items: baseline;
+      }
+      h1,h2{
+        color: $whiteColor;
+        margin: 0;
+        @media (max-width:1170px){
+          font-size: 1.5rem;
+        }
+      }
+      i{
+        cursor: pointer;
+        font-size: 2rem;
+      }
+    }
+
+    .navigation {
+      width: 50%;
+      nav{
+        display: flex;
+        justify-content: space-around;    
+        font-size: 1.5rem;
+        @media (max-width: 800px){
+          display: none;
+        }
+        .link{
+          color: $whiteColor;
+        }
+        @media (max-width : 1170px ) {
+          font-size: 1rem; 
+        }
+      }
+    }
+
+    .fa-bars{
+      display: none;
+      color: $whiteColor;
+      font-size: 2rem;
+      cursor: pointer;
+      @media (max-width: 800px){
+        display: block;
+        margin-right: 20px;
+      }
+    }
+
+    .navMobil{
+      @media (min-width: 801px){
+        display: none;
+      }
+      .navMobil-link{
+        display: flex;
+        justify-content: space-around;    
+        font-size: 1.5rem;
+        position: fixed;
+        height: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+        top: 78px;
+        right: 0;
+        animation-name: menuMobil;
+        animation-duration: 2s;
+        backdrop-filter: contrast(30%);
+        @media (max-width: 440px){
+          top: 85px;
+        }
+        .link{
+          color:$blackColor;
+          font-weight: bolder;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+    }
+}
+
+.visible{
+  display: block;
+}
+
+.hidden{
+  display: none;
+} 

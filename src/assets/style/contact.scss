@@ -1,0 +1,64 @@
+$gradientColor: rgb(170, 203, 221);
+
+#block-contact{
+    background-image: url("../image/paysage.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+    padding: 30px;
+    height: 100vh;
+    @media (max-width:725px){
+        margin-top: 100px;
+    }
+    @media (max-width: 700px){
+        align-items: stretch;
+        #titleForm{
+            text-align: center;
+        }
+    }
+
+    #form{
+        backdrop-filter: blur(8px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #block-form{
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            width: 600px;
+            padding-right: 15px;
+            @media (max-width: 700px){
+                width: 100%;
+            }
+            label,input{
+                margin: 5px;
+            }
+            input,textarea{
+                width: 100%;
+                border: 2px rgb(132, 132, 188) solid
+            }
+            .effet:hover{
+                background-color: $gradientColor;
+                cursor: pointer;
+                transition: 1500ms;
+            }
+            textarea{
+                height: 100px;
+            }
+        }
+        button{
+            margin: 10px;
+            padding: 5px 30px;       
+        }
+        button:hover{
+            cursor: pointer;
+            color: #fff;
+            background-color:$gradientColor;
+            transition: 1000ms;
+        }
+    }
+    
+}
