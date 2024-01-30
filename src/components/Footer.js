@@ -11,7 +11,10 @@ function Footer() {
                             <i className="fa-brands fa-linkedin" />
                         </a>
                     </li>
-                    <li><i className="fa-solid fa-at"></i> lamtaoui@hotmail.fr</li>
+                    <li>
+                        <i className="fa-solid fa-at"></i>
+                        <a className="email" href="mailto:lamtaoui@hotmail.fr" target="blank" aria-label="lien email">lamtaoui@hotmail.fr</a>
+                    </li>
                 </ul>
             </nav>
         </footer>

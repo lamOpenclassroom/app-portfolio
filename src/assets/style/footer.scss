@@ -23,7 +23,16 @@ $blackColor:#000;
             @media (max-width:800px){
                 font-size: 1rem;
             }
-            .fa-linkedin{
+            .fa-solid{
+                margin-right: 10px
+            }
+            .fa-linkedin:hover{
+                color: rgb(104, 215, 104);
+            }
+            .email:hover{
+                color: rgb(104, 215, 104);
+            }
+            .fa-linkedin, .email{
                 color: #fff;
             }
         }

@@ -35,10 +35,12 @@ $gradientColor: rgb(170, 203, 221);
             }
             label,input{
                 margin: 5px;
+                font-size: 1.5rem;
             }
             input,textarea{
                 width: 100%;
-                border: 2px rgb(132, 132, 188) solid
+                border: 2px rgb(132, 132, 188) solid;
+                font-size: 1.5rem;
             }
             .effet:hover{
                 background-color: $gradientColor;
