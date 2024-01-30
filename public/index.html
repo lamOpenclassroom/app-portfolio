@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
@@ -16,11 +17,11 @@
     <title>Portfolio</title>
   </head>
   <body>
-      <form action="/public/sent.html" name="contact" data-netlify="true" hidden>
+    <div id="root"></div>
+      <form action="/sent.html" name="contact" data-netlify="true" hidden>
         <input type="text" name="name" />
         <input type="email" name="email" />
         <textarea name="message"></textarea>
       </form>
-      <div id="root"></div>
   </body>
 </html>
